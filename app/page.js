@@ -12,6 +12,11 @@ export default function Page() {
     <main>
       <Navigation/>
       <section className="MainSection">
+        <Home/>
+        <About/>
+        <Contact/>
+        <Menu/>
+        <Footer/>
       </section>
     </main>
     </>
