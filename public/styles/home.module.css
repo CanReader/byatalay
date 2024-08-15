@@ -58,8 +58,8 @@
   color: #0c0c0c;
   transform: scale(.98);
   transition: .4s ease;
-  border-bottom: 1px solid transparent;
 }
+
 
 .ExploreBtnWrapper{
 
@@ -69,28 +69,31 @@
 }
 
 .ImageWrapper{
-
+  z-index: 5;
 }
 
-.Image::before{
+.ImageWrapper::before{
   content: "";
-  width: 60%;
-  height: 60%;
   position: absolute;
-  z-index: 1;
+  top: 36%;
+  right: 29%;
+  width: 18%;
+  height: 35%;
+  z-index: -1;
   background: #dcca87 no-repeat 50%;
-
 }
 
 .Image{
-  
+  z-index: 99;
 }
 
-.Image::after{
+.ImageWrapper::after{
   content: "";
-  width: 60%;
-  height: 60%;
   position: absolute;
-  z-index: 1;
+  top: 13%;
+  right: 17%;
+  width: 18%;
+  height: 35%;
+  z-index: -1;
   background: #dcca87 no-repeat 50%;
 }
