@@ -52,11 +52,11 @@
   width: 100%;
 }
 
-.app_items_div{
+.app_items_div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media screen and (min-width: 2000px) {
@@ -90,4 +90,13 @@
     font-size: 35px;
     line-height: 48.5px;
   }
+}
+
+@media screen and (max-width: 750px) {
+	.app_items_div {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 5vw;
+	}
 }

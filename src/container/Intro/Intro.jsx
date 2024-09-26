@@ -12,7 +12,7 @@ const Intro = () => {
     <div className="app__video">
       <video
         ref={vidRef}
-        src={meal}
+        src={'./Showcase.mp4'}
         type="video/mp4"
         loop
         controls={false}
