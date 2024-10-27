@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
+    "amqplib": "^0.10.4",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
     "framer-motion": "^11.9.0",
     "next": "14.2.14",
     "react": "^18",

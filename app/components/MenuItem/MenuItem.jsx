@@ -22,7 +22,7 @@ const handleMouseLeave = () => {
     	    <hr/>
     	    <p className="ItemDetail_Desc">{Data.desc}</p>
     	    <p className="ItemDetail_Price">{Data.price} TL</p>
-    	    <button className='BuyBtn'>Sepete ekle</button>
+    	    <button className='BuyBtn' onClick={() => window.open("https://www.yemeksepeti.com/restaurant/tu6m/la-casa-de-pasta")}>Sipariş edin</button>
   		  </div>
  	      <img src={Data.url} alt={`[IMG-${Data.name}]`}/>
 		</div>

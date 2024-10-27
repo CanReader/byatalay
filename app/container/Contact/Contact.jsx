@@ -8,7 +8,7 @@ export default function() {
     const date = new Date();
     var currentHour = date.getHours();
     const WorkHours = [11,22];
-    var isOn = date.getDay() != 0 && (currentHour > WorkHours[0] && currentHour < WorkHours[1]);
+    var isOn = date.getDay() != 1 && (currentHour > WorkHours[0] && currentHour < WorkHours[1]);
     
     return <div className="app__bg app__wrapper section__padding" id="contact">
     <div className="app__wrapper_info">

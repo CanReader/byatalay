@@ -2,19 +2,15 @@
 import React, {useState} from 'react';
 import Image from 'next/image'
 import { GiHamburgerMenu} from 'react-icons/gi';
-import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { Inter, Cormorant_Upright} from 'next/font/google'
 import images from '@/app/constants/images';
-import { Navbar } from '@nextui-org/react';
 import './Navbar.css';
 
-const inter = Inter({ subsets: ['latin'] });
-const Cormorant = Cormorant_Upright({ subsets: ['latin'], weight:'300' });
+const inter = Inter({ subsets: ['latin'],display:"swap"});
+const Cormorant = Cormorant_Upright({ subsets: ['latin'], weight:'500',display:"swap" });
 
-function ToggleShop() {
-  
-}
+function ToggleShop(val) {  }
 
 const Sections = [
   'Ana Sayfa',
@@ -27,18 +23,19 @@ const Sections = [
 export default function({refs}) {
   const [getToggleMenu, setToggleMenu] = useState(false);
   return (
+    
     <nav className="app__navbar">
       <Image className='app__logo' src={images.logo} alt="app logo" width={150}/>
       <ul className="app__navbar-links">
           {Sections.map((val,i) => {
-            return <li key={i} className={inter.className}><a href={`#${val}`}>{val}</a></li>
+            return <li key={i} className={Cormorant.className} style={{fontSize:20}}><a href={`#${val}`}>{val}</a></li>
           })}
       </ul>
-      <div className="app__navbar-login">
-        <PiShoppingCartSimpleLight fontSize={27} onClick={ToggleShop}/>
-      </div>
 
-
+      <a href="https://www.yemeksepeti.com/restaurant/tu6m/la-casa-de-pasta" style={{position:'relative',left:30}}>
+        <Image src={images.yemeks} height={40}/>
+      </a>
+      
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {getToggleMenu && (
@@ -49,6 +46,7 @@ export default function({refs}) {
             Sections.map((val,i) => {
               return <li><a className={Cormorant.className} href={`#${val}`} onClick={() => setToggleMenu(false)}>{val}</a></li>
             })}
+
             </ul>
           </div>
         )}
@@ -56,3 +54,21 @@ export default function({refs}) {
     </nav>
   );
 };
+
+/*
+ <div className="app__navbar-login">
+      <PiShoppingCartSimpleLight fontSize={27} onClick={ToggleShop}/>
+      </div>
+      <span className='app__store-items'>
+        0
+      </span>
+
+
+  <li>
+      <a className={Cormorant.className} 
+         href={`#sepet`} 
+         onClick={() => setToggleMenu(false)}>
+           Sepeti Görüntüle
+      </a>
+  </li>
+ */

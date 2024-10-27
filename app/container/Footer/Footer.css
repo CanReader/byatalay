@@ -46,6 +46,7 @@
   
   .app__footer-links_icons svg {
     color: var(--color-white);
+    stroke: white;
     margin: 0.5rem;
     font-size: 24px;
     cursor: pointer;
@@ -53,6 +54,7 @@
   
   .app__footer-links_icons svg:hover {
     color: var(--color-golden);
+    stroke: var(--color-golden);
   }
   
   .app__footer-headtext {

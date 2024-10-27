@@ -5,8 +5,8 @@ import { Open_Sans, Cormorant_Upright } from 'next/font/google';
 import images from "../../constants/images.js";
 import './Header.css';
 
-const OpenSans = Open_Sans({weight:'300',subsets:['latin']});
-const CormorantTitle = Cormorant_Upright({weight:'500',subsets:['latin']});
+const OpenSans = Open_Sans({weight:'300',subsets:['latin'],display:"swap"});
+const CormorantTitle = Cormorant_Upright({weight:'500',subsets:['latin'],display:"swap"});
 
 export default function({ scrollToMenu }) {
   return (<div className="app__header app__wrapper section__padding" id="home">

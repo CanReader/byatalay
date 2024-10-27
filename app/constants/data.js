@@ -3,21 +3,21 @@ export default {
     'Makarnalar': [
         {
             name: 'Fettucini 150gr',
-            url:'./Fettucini1.png',
+            url:'./Fettucini.png',
             desc:'Fettuccine, geleneksel İtalyan mutfağının vazgeçilmez bir lezzetidir. Bu özel makarna, taze malzemelerle hazırlanıp, Parmesan peyniriyle buluştuğunda, lezzetini zirveye taşır. Her lokmada, bu özel karışımın sunduğu zengin tadı hissedebilirsiniz.',
-            price:90
+            price:130
         },
         {
             name:'Fettucini 200gr',
-            url:'./Fettucini1.png',
+            url:'./Fettucini.png',
             desc:'Fettuccine, geleneksel İtalyan mutfağının vazgeçilmez bir lezzetidir. Bu özel makarna, taze malzemelerle hazırlanıp, Parmesan peyniriyle buluştuğunda, lezzetini zirveye taşır. Her lokmada, bu özel karışımın sunduğu zengin tadı hissedebilirsiniz.',
-            price:120
+            price:160
         },
         {
             name:'Fettucini 250gr',
-            url:'./Fettucini1.png',
+            url:'./Fettucini.png',
             desc:'Fettuccine, geleneksel İtalyan mutfağının vazgeçilmez bir lezzetidir. Bu özel makarna, taze malzemelerle hazırlanıp, Parmesan peyniriyle buluştuğunda, lezzetini zirveye taşır. Her lokmada, bu özel karışımın sunduğu zengin tadı hissedebilirsiniz.',
-            price:150
+            price:190
         },
     ],
     /////////////////////////////////////////
@@ -76,23 +76,16 @@ export default {
     'Salatalar': [
         {
             name:'Tavuklu Sezar Salata',
-            url:'./TavukluSalata.png',
+            url:'./Sezar.png',
             desc:'Parmesen peyniri ve gevrek ekmek parçalarıyla süslenmiş, tavuklu sezar salatamız, hem doyurucu hem de lezzetlidir.',
-            price:150
+            price:190
         },
 
         {
             name:'Akdeniz Salata',
             url:'./Akdeniz.png',
             desc:'Zeytinyağı, limon suyu ve taze otlarla marine edilmiş sebzelerden oluşan Akdeniz salatamız, sağlıklı beslenmek isteyenlerin tercihi.',
-            price:120
-        },
-
-        {
-            name:'Ekşi Meyve Salatası',
-            url:'./MeyveSalata.png',
-            desc:'Mevsiminde toplanmış taze meyvelerin bir araya geldiği ekşi meyve salatamız, damaklarınızda ferahlık bırakacak.',
-            price:140
+            price:160
         },
     ],
     /////////////////////////////////////////
@@ -104,16 +97,16 @@ export default {
             price:110
         },
         {
-            name:'Tiramisu',
-            url:'./Tiramisu.png',
+            name:'Sponge',
+            url:'./Sponge.png',
             desc:'Kahve ve ladyfinger bisküvisinin eşsiz uyumuyla hazırladığımız tiramisu, İtalyan mutfağının en sevilen tatlılarından biri.',
             price:110
         },
         {
-            name:'Çikolatalı Special',
-            url:'./Special.png',
+            name:'Dubai Çikolatası',
+            url:'./Dubai.png',
             desc:'Kremalı ve hafif yapısıyla oluşturduğumuz cheesecake, tatlı krizlerinize en iyi çözüm olacak.',
-            price:140
+            price:190
         },
     ],
     /////////////////////////////////////////

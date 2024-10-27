@@ -2,7 +2,7 @@ import Image from 'next/image';
 import images from '../../constants/images';
 import { Cormorant_Upright } from 'next/font/google';
 
-const cormorant = Cormorant_Upright({weight:'700',subsets:['latin']});
+const cormorant = Cormorant_Upright({weight:'700',subsets:['latin'],display:"swap"});
 
 export default function({ title, isForkCenter }){
   return <div style={{ marginBottom: '1rem' }}>

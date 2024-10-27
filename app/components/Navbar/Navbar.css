@@ -26,7 +26,13 @@
   }
   
   .app__navbar-links li:hover {
-    color: var(--color-grey);
+    color: var(--color-golden);
+  }
+
+  .app__store-items {
+    position: relative;
+    left: -1%;
+    bottom: 15px;
   }
   
   .app__navbar-login {
@@ -79,7 +85,6 @@
   
   .app__navbar-smallscreen_links {
     list-style: none;
-    margin-top: 20vh;
   }
   
   .app__navbar-smallscreen_links li {
@@ -101,6 +106,10 @@
   }
   
   @media screen and (max-width: 800px) {
+    .app__store-items {
+      display: none;
+    }
+
     .app__navbar {
         padding: 1rem;
     }
